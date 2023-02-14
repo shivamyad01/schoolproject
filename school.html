@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="school.css" />
+  
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+
+    <nav>
+      <label class="logo">School</label>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Acadmic</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Gallery </a></li>
+        <li><a href="#">Acchievment</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="/school project/image/school2.webp"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="/school project/image/school8.jpeg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="/school project/image/school11.jpeg"
+            alt="Image 3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="slide1">
+      <h4 id="text"></h4>
+    </div>
+
+
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="/school project/chairman.jpg" alt="">
+        
+    </div>
+
+    <div class="flex-item">
+      
+      <img src="/school project/image/vc1.jpg" alt="">
+      
+     
+  </div>
+
+  <div class="flex-item">
+    
+    <img src="/school project/image/vc1.jpg" alt="">
+    
+   
+</div>
+
+<div class="flex-item">
+  
+  <img src="/school project/image/vp1.jpg" alt="">
+ 
+</div>
+      </div>
+    
+     </div>
+
+<footer class="footer">
+  <div class="container">
+     <div class="row">
+         <div class="footer-col">
+             <h5>Academics</h5>
+             <ul>
+                 <li><a href="#">about us</a></li>
+                 <li><a href="#">our services</a></li>
+                 <li><a href="#">privacy policy</a></li>
+                 <li><a href="#">affiliate program</a></li>
+             </ul>
+         </div>
+         <div class="footer-col">
+             <h5>Infrastructure</h5>
+             <ul>
+                 <li><a href="#">FAQ</a></li>
+                 <li><a href="#">shipping</a></li>
+                 <li><a href="#">returns</a></li>
+                 <li><a href="#">order status</a></li>
+                 <li><a href="#">payment options</a></li>
+             </ul>
+         </div>
+         <div class="footer-col">
+             <h5>Contact Us</h5>
+             <ul>
+                 <li><a href="#">watch</a></li>
+                 <li><a href="#">bag</a></li>
+                 <li><a href="#">shoes</a></li>
+                 <li><a href="#">dress</a></li>
+             </ul>
+         </div>
+         <div class="footer-col">
+             <h5>Google Map</h5>
+             <div class="social-links">
+               
+                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717.871206498357!2d83.37062406593932!3d26.720987542702396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991439bad810a99%3A0x76517cbc9b1e6b9d!2z4KSX4KWL4KSw4KSW4KSq4KWB4KSwIOCkquCkrOCljeCksuCkv-CklSDgpLXgpL_gpKbgpY3gpK_gpL7gpLLgpK8!5e0!3m2!1shi!2sin!4v1676194807295!5m2!1shi!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+             </div>
+         </div>
+     </div>
+  </div>
+
+  
+</footer>
+
+
+    <script>
+      const slides = document.querySelector(".slides");
+      let index = 0;
+
+      function showNextSlide() {
+        slides.style.transform = `translateX(-${index * 100}%)`;
+        index = (index + 1) % slides.children.length;
+      }
+
+      setInterval(showNextSlide, 4000);
+
+      //text moving
+      const text = document.getElementById("text");
+      text.innerHTML =
+        "Gorakhpur Public School Affiliate to CBSE Ranibagh(Rustampur Dhala) Bargoan, Gorakhpur-273016.";
+    </script>
+  </body>
+</html>
